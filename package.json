@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "server": "json-server --watch data/db.json --port 5000",
+    "start:render": "json-server --host 0.0.0.0 --port $PORT data/db.json",
     "start": "concurrently \"npm run server\" \"npm run dev\"",
     "build": "vite build",
     "preview": "vite preview"
